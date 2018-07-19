@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Raleigh & Drake</title>
+  <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="false">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+
+</head>
+
+<body>
+  <main>
+
+    <header class="header">
+      <div class="page-header">
+        <div class="back-btn only-mobile">
+          <a href="home.html" class="icon-navigate-right"></a>
+        </div>
+        <div onclick="window.location.href='/home.html'" class="header-logo">
+          <span class="logo"></span>
+        </div>
+        <div class="right-icon only-mobile">
+          <span class="icon-favorite"></span>
+        </div>
+        <div class="favorite only-tablet">MY FAVORITES</div>
+      </div>
+    </header>
+
+    <div class="sub-menu only-tablet">
+      <a href="home.html">back</a>
+      <!-- <div class="text">share</div> -->
+    </div>
+    <!-- Homepage start here -->
+    <div class="city explorer">
+      <div class="content-wrapper">
+
+        <div class="explorer-image flex">
+          <h4>EXPLORER</h4>
+          <picture>
+            <img src="./img/explorer/marianna-jamadi.jpg" alt="jamadi">
+          </picture>
+        </div>
+
+        <div class="explorer-intro">
+          <h1>Marianna Jamadi</h1>
+          <h5>Travel Photographer<br><span class="bold">@mariannajam</span></h5>
+          <p>
+            I am a half Finnish, half Indonesian creative creature. I was born and raised in California, spent my twenties in NYC, and turned 30 in Thailand when I was in the midst of backpacking around the world. I documented the entire journey on my travel blog NOMADIC HABIT. I believe in the power of imagery and the power of words. I'm a dreamer and a doer. My mind is always moving and so are my feet. When I am not photographing or writing you may find me on a sewing machine or amongst a mess of art supplies. I get lost in the creative process. It is through artistic expression that I feel beautiful, balanced, and blissful.
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <div class="explorer">
+      <div class="content-wrapper m0">
+
+        <div class="explorer-world text-center">
+          <h4>4 GUIDES</h4>
+          <h1>Marianna's World</h1>
+          <div id="map" class="map-wrapper" style="height:400px !important;"></div>
+        </div>
+
+      </div>
+    </div>
+    <div class="city explorer p0">
+      <div class="content-wrapper m0">
+
+        <div class="explorer-experiences text-center">
+          <h4>4 ACTIVITIES</h4>
+          <h1>Marianna's Experiences</h1>
+
+          <div class="large-grid item-container p0">
+            <div class="item">
+              <div class="data">
+                <div class="top">
+                  <h3>Budha<br>Lounge</h3>
+                  <div class="icon-favorite white"></div>
+                </div>
+                <div class="bottom-text">4.5 Miles from you</div>
+              </div>
+              <img src="./img/explorer/explorer-1.jpg" alt="explorer-1">
+            </div>
+            <div class="item">
+              <div class="data">
+                <div class="top">
+                  <h3>Anchor Brewing<br>Taproom</h3>
+                  <div class="icon-favorite white"></div>
+                </div>
+                <div class="bottom-text">4.5 Miles from you</div>
+              </div>
+              <img src="./img/explorer/explorer-2.jpg" alt="explorer-2">
+            </div>
+          </div>
+          <div class="large-grid item-container p0">
+            <div class="item">
+              <div class="data">
+                <div class="top">
+                  <h3>Gordo<br>Taqueria</h3>
+                  <div class="icon-favorite white"></div>
+                </div>
+                <div class="bottom-text">4.5 Miles from you</div>
+              </div>
+              <img src="./img/explorer/explorer-3.jpg" alt="explorer-3">
+            </div>
+            <div class="item">
+              <div class="data">
+                <div class="top">
+                  <h3>Uncornerd<br>Mission Street</h3>
+                  <div class="icon-favorite white"></div>
+                </div>
+                <div class="bottom-text">4.5 Miles from you</div>
+              </div>
+              <img src="./img/explorer/explorer-4.jpg" alt="explorer-4">
+            </div>
+          </div>
+
+          <a href="javascript:void(0);" class="btn orange large btn-block">LOAD MORE</a>
+        </div>
+
+        <div class="explorer-guides text-center">
+          <h4>5 GUIDES</h4>
+          <h1>Marianna's Guides</h1>
+
+          <div class="large-grid-full p0">
+
+            <div class="list">
+              <div class="content">
+                <h3>Lala Lalala la LA</h3>
+                <div class="bottom">by <a href="javascript:void(0);">Marianna Jamadi</a></div>
+              </div>
+              <img src="./img/explorer/explorer-5.jpg" alt="explorer-5">
+            </div>
+
+            <div class="list">
+              <div class="content">
+                <h3>The Dopest Museums in LA</h3>
+                <div class="bottom">by <a href="javascript:void(0);">Anthony Bourdain</a></div>
+              </div>
+              <img src="./img/explorer/explorer-6.jpg" alt="explorer-6">
+            </div>
+
+          </div>
+
+          <a href="javascript:void(0);" class="btn orange large btn-block">LOAD MORE</a>
+        </div>
+
+      </div>
+    </div>
+    <!-- end city -->
+
+  </main>
+
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/less-2.7.2.min.js"></script>
+
+  <!-- <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+  <script>
+    function myMap() {
+      var mapOptions = {
+          center: new google.maps.LatLng(51.5, -0.12),
+          zoom: 10,
+          mapTypeId: google.maps.MapTypeId.HYBRID
+      }
+      var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    }
+  </script> -->
+</body>
+
+</html>
