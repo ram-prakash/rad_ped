@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Raleigh & Drake</title>
+  <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="false">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="icon" href="favicon.ico">
+
+  <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+
+</head>
+
+<body>
+  <main>
+
+    <header class="header">
+      <div class="page-header">
+        <div class="back-btn only-mobile">
+          <a href="home.html" class="icon-navigate-right"></a>
+        </div>
+        <div onclick="window.location.href='/home.html'" class="header-logo">
+          <span class="logo"></span>
+        </div>
+        <div class="right-icon only-mobile">
+          <span class="icon-favorite"></span>
+        </div>
+        <div class="favorite only-tablet">MY FAVORITES</div>
+      </div>
+    </header>
+
+    <div class="sub-menu only-tablet">
+      <a href="home.html">back</a>
+      <div class="text">share</div>
+    </div>
+    <div class="sub-menu only-mobile">
+      <div class="text-right"><img src="" alt="share"></div>
+    </div>
+    <!-- Homepage start here -->
+    <div class="city favorite">
+
+      <h4>18 favorites</h4>
+      <h1>Your favorites<br>in San Francisco</h1>
+
+      <div class="menu">
+
+        <div class="sorting">
+          <span class="text">Sort by</span>
+          <div class="custom-select inline-block">
+            <select name="sort" id="">
+              <option value="popular">most popular</option>
+              <option value="new">new</option>
+              <option value="relevance">relevance</option>
+            </select>
+          </div>
+          <span class="text">in</span>
+          <select name="sort" id="">
+            <option value="popular">San Francisco</option>
+            <option value="new">new</option>
+            <option value="relevance">relevance</option>
+          </select>
+        </div>
+
+        <div class="search">
+          <input type="text" placeholder="Search Cities">
+          <span class="search-icon"></span>
+        </div>
+
+      </div>
+      <!-- end menu -->
+
+      <div class="grid">
+
+        <div class="grid__item odd_items">
+          <a href="city-detail.html" class="fliter-color">
+            <span class="text title">Hot Damn<br>in San Francisco</span>
+            <img src="./img/favorite/favorite-1.jpg" alt="Tulum">
+          </a>
+          <span class="text distance">4.5 Miles from you</span>
+          <span class="text del"><img src="./img/trash.svg" alt="trash"></span>
+        </div>
+
+        <div class="grid__item odd_items">
+          <a href="city-detail.html" class="fliter-color">
+            <span class="text title">Uncornered<br>Mission Street</span>
+            <img src="./img/favorite/favorite-2.jpg" alt="New York">
+          </a>
+          <span class="text distance">4.5 Miles from you</span>
+          <span class="text del"><img src="./img/trash.svg" alt="trash"></span>
+        </div>
+
+        <div class="grid__item odd_items">
+          <a href="city-detail.html" class="fliter-color">
+            <span class="text title">Channel your<br>inner Stevie Nicks</span>
+            <img src="./img/favorite/favorite-3.jpg" alt="Paris">
+          </a>
+          <span class="text distance">4.5 Miles from you</span>
+          <span class="text del"><img src="./img/trash.svg" alt="trash"></span>
+        </div>
+
+        <div class="grid__item odd_items">
+          <a href="city-detail.html" class="fliter-color">
+            <span class="text title">Hot Damn<br>in San Francisco</span>
+            <img src="./img/favorite/favorite-4.jpg" alt="Tulum">
+          </a>
+          <span class="text distance">4.5 Miles from you</span>
+          <span class="text del"><img src="./img/trash.svg" alt="trash"></span>
+        </div>
+
+        <div class="grid__item odd_items">
+          <a href="city-detail.html" class="fliter-color">
+            <span class="text title">Uncornered<br>Mission Street</span>
+            <img src="./img/favorite/favorite-5.jpg" alt="New York">
+          </a>
+          <span class="text distance">4.5 Miles from you</span>
+          <span class="text del"><img src="./img/trash.svg" alt="trash"></span>
+        </div>
+
+        <div class="grid__item odd_items">
+          <a href="city-detail.html" class="fliter-color">
+            <span class="text title">Channel your<br>inner Stevie Nicks</span>
+            <img src="./img/favorite/favorite-6.jpg" alt="Paris">
+          </a>
+          <span class="text distance">4.5 Miles from you</span>
+          <span class="text del"><img src="./img/trash.svg" alt="trash"></span>
+        </div>
+
+        <div class="grid__item odd_items">
+          <a href="city-detail.html" class="fliter-color">
+            <span class="text title">Hot Damn<br>in San Francisco</span>
+            <img src="./img/favorite/favorite-7.jpg" alt="Tulum">
+          </a>
+          <span class="text distance">4.5 Miles from you</span>
+          <span class="text del"><img src="./img/trash.svg" alt="trash"></span>
+        </div>
+
+        <div class="grid__item odd_items">
+          <a href="city-detail.html" class="fliter-color">
+            <span class="text title">Uncornered<br>Mission Street</span>
+            <img src="./img/favorite/favorite-8.jpg" alt="New York">
+          </a>
+          <span class="text distance">4.5 Miles from you</span>
+          <span class="text del"><img src="./img/trash.svg" alt="trash"></span>
+        </div>
+
+        <div class="grid__item odd_items">
+          <a href="city-detail.html" class="fliter-color">
+            <span class="text title">Channel your<br>inner Stevie Nicks</span>
+            <img src="./img/favorite/favorite-9.jpg" alt="Paris">
+          </a>
+          <span class="text distance">4.5 Miles from you</span>
+          <span class="text del"><img src="./img/trash.svg" alt="trash"></span>
+        </div>
+
+      </div>
+      <!-- end grid -->
+
+      <a href="javascript:void(0);" class="btn orange large btn-block">LOAD MORE</a>
+
+    </div>
+    <!-- end city -->
+
+  </main>
+
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/less-2.7.2.min.js"></script>
+
+</body>
+
+</html>

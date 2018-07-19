@@ -1,0 +1,123 @@
+.favorite{
+
+  .grid{
+    &__item{
+      .text{
+        &.title{
+          font-family: 'Mercury TextG';
+          font-size: 18px;
+          line-height: 1;
+          text-align: right;
+          width: ~"calc(100% - 16px)";
+          top: 15px;
+          padding: 0 15px;
+          text-transform: inherit;
+        }
+        &.distance{
+          font-family: 'Mercury TextG';
+          font-size: 11px;
+          line-height: 1;
+          width: auto;
+          top: auto;
+          bottom: 15px;
+          padding: 0 0 0 15px;
+        }
+        &.del{
+          line-height: 1;
+          width: auto;
+          top: auto;
+          right: 0;
+          bottom: 15px;
+          padding: 0 25px 0 0;
+          img{
+            width: 20px;
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+
+  .custom-select{
+
+    select{
+      width: auto;
+      option{
+        padding: 5px !important;
+        margin: 15px !important;
+        color:#c4c4c4;
+        border: 0;
+      }
+    }
+  }
+  @media (min-width: @tablet-portrait) {
+
+    .grid{
+  
+      &__item{
+        &.odd_items{
+          width: 33%;
+        }
+      }
+      
+    }
+
+  }
+
+  @media (min-width: @tablet-landscape) {
+    .grid{
+  
+      &__item{
+
+        .text{
+          
+          &.title{
+            font-size: 24px;
+            width: ~"calc(100% - 20px)";
+            top: 20px;
+            padding: 0 20px;
+          }
+          &.distance{
+            bottom: 20px;
+            padding: 0 0 0 20px;
+          }
+          &.del{
+            bottom: 20px;
+            padding: 0 30px 0 0;
+          }
+        }
+      }
+  
+    }
+  }
+
+  @media (max-width: @phone-landscape) {
+    .grid{
+  
+      &__item{
+        &.odd_items{
+          width: 100%;
+        }
+        .text{
+          &.title{
+            font-size: 24px;
+            text-align: left;
+            width: ~"calc(100% - 12px)";
+            top: 20px;
+            padding: 0 20px;
+          }
+          &.distance{
+            bottom: 20px;
+            padding: 0 0 0 20px;
+          }
+          &.del{
+            bottom: 20px;
+            padding: 0 25px 0 0;
+          }
+        }
+      }
+  
+    }
+  }
+
+}

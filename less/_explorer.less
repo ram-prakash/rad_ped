@@ -1,0 +1,163 @@
+.explorer{
+  min-height: auto;
+  .content-wrapper{
+    margin-top: 20px;
+    padding: 0 25px;
+
+    h1, h2, h3, h4, h5, h6{ margin: 0; padding: 0; }
+
+    .explorer-image{
+      flex-direction: column-reverse;
+      h4{
+        margin: 15px 0;
+      }
+      picture{
+        margin-left: auto;
+        max-width: 100%;
+      }
+    }
+
+    .explorer-intro{
+      margin: 0 0 35px;
+      h1{
+        margin-bottom: 10px;
+        padding: 0;
+      }
+      h5{
+        font-family: 'Celias_Regular';
+        font-size: 11px;
+        line-height: 1.42;
+        color: #000000;
+        span{
+          &.bold{
+            font-family: 'Celias-Black';
+          }
+        }
+      }
+      p{
+        font-family: 'Mercury TextG';
+        font-size: 12px;
+        line-height: 1.33;
+        color: #000000;
+        margin: 35px 0 0;
+      }
+    }
+
+    .explorer-world{
+      margin: 0 0 35px;
+      .map-wrapper{
+        margin: 20px 0 0;
+        width:100%;
+        background:yellow;
+      }
+    }
+
+    .explorer-experiences{
+      h1{
+        margin: 10px 0;
+      }
+      .item-container{
+        flex-direction: column;
+        text-align: left;
+        margin: 0 -10px;
+        .item{
+          padding: 10px;
+        }
+      }
+    }
+
+    .explorer-guides{
+      margin: 50px 0 0;
+      h1{
+        margin: 10px 0 20px;
+      }
+    }
+
+  }
+  img{
+    max-width: 100%;
+  }
+  .btn.btn-block{
+    margin: 17px 0px 25px;
+    width: 100%;
+  }
+
+  @media (min-width: @tablet-portrait){
+    .content-wrapper{
+      margin-top: 70px;
+
+      .explorer-image{
+        flex-direction: row;
+        h4{
+          margin: 0 50px 0 0;
+          margin-top: auto;
+        }
+      }
+
+      .explorer-intro{
+        h1{ margin-top: 15px; }
+        h5{ font-size: 12px; }
+        p{ width: 50%; }
+      }
+
+      .explorer-world{
+        margin: 0 0 60px;
+        .map-wrapper{
+          margin: 40px 0 0;
+        }
+      }
+
+      .explorer-experiences{
+        .item-container{
+          flex-direction: row;
+          .bottom-text{
+            font-size: 12px;
+          }
+        }
+      }
+
+      .explorer-guides{
+        margin: 75px 0 0;
+        .large-grid-full{
+          margin: 0 -10px;
+        }
+      }
+
+    }
+  }
+
+  @media (min-width: @tablet-landscape){
+    .content-wrapper{
+
+      .explorer-intro{
+        margin: 0 0 50px;
+        h1{
+          margin-top: 25px;
+          margin-bottom: 15px;
+        }
+        p{
+          margin: 50px 0 0;
+        }
+      }
+
+      .explorer-world{
+        margin: 0 0 90px;
+        .map-wrapper{
+          
+        }
+      }
+
+      .explorer-experiences{
+        .item-container{
+          flex-direction: row;
+        }
+      }
+
+      .explorer-guides{
+        margin: 80px 0 0;
+      }
+
+    }
+  }
+
+}
