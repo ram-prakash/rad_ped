@@ -1,0 +1,112 @@
+.city-detail{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0 0;
+  color: @black;
+
+  .color-palate{
+    min-height: 71vh;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  h1{
+    font-family: 'Mercury_Display_Bold';
+    font-size: 40px;
+    line-height: 1;
+    padding: 0 20px;
+    margin: 50px 0 20px 10%;
+    z-index: 1;
+    text-align: right;
+    width: 90%;
+    color: @white;
+  }
+
+
+  h4{
+    opacity: 0.2;
+    font-family: 'Knockout-HTF67-FullBantamwt';
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    padding: 0 20px;
+    margin: 25px 0 10px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h2{
+    font-family: 'Mercury_Display_Bold';
+    font-size: 32px;
+    line-height: 1.06;
+    letter-spacing: normal;
+    text-align: center;
+    padding: 0 20px;
+    margin: 0 5% 19px;
+    width: 90%;
+  }
+
+  .btn{
+    &.btn-block{
+      margin-top: 10px;
+    }
+  }
+
+
+}
+
+
+@media (min-width: @tablet-portrait) {
+
+  .city-detail{
+
+    .color-palate{
+      min-height: 53vh;
+    }
+
+    h1{
+      font-size: 60px;
+      line-height: 1.03;
+      padding: 0 24px;
+      margin-bottom: 50px;
+      margin: 123px 0 40px 30%;
+      width: 70%;
+      text-indent: 7rem;
+    }
+
+    h4{
+      font-size: 22px;
+      letter-spacing: 2px;
+      padding: 0 24px;
+      margin-top: 70px;
+    }
+
+    h2{
+      font-size: 36px;
+      text-align: center;
+      padding: 0 20px;
+      margin: 0 5% 32px;
+      width: 90%;
+    }
+
+    .last-block{
+      background: @alabaster;
+
+      h4{
+        margin-top: 45px;
+      }
+      h1{
+        margin-bottom: 42px;
+      }
+    }
+    .btn{
+      &.btn-block{
+        margin-top: 6px;
+      }
+    }
+
+  }
+
+}

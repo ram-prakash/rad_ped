@@ -1,0 +1,118 @@
+@header_height: 70px;
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.page-header, .page-header * {
+    transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.page-header{
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0) translateZ(0);
+    -moz-transform: matrix(1, 0, 0, 1, 0, 0) translateZ(0);
+    -ms-transform: matrix(1, 0, 0, 1, 0, 0) translateZ(0);
+    -o-transform: matrix(1, 0, 0, 1, 0, 0) translateZ(0);
+    transform: matrix(1, 0, 0, 1, 0, 0) translateZ(0);
+}
+.page-header{
+  display: flex;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: space-between;
+  height: @header_height;
+  color: @black;
+
+  .icon-navigate-right{
+    background: url(../img/left_nav_arrow.svg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    width: 10px;
+    height: 17px;
+  }
+  .icon-favorite{
+    background: url(../img/heart.svg) no-repeat center;
+    background-size: cover;
+    display: flex;
+    width: 18px;
+    height: 16px;
+  }
+  .header-logo{
+    .logo{
+      background: url(../img/logo_black.svg) no-repeat center;
+      background-size: cover;
+      height: 22px;
+      display: flex;
+      width: 134px;
+    }
+    &.center{
+      margin: 0 auto;
+    }
+  }
+  .favorite{
+    font-family: 'Celias-Black';
+    letter-spacing: 2.1px;
+  }
+}
+
+.white{
+  .page-header{
+    color: @white;
+  }
+  .header-logo{
+    .logo{
+      background: url(../img/logo_white.svg) no-repeat center;
+      background-size: cover;
+    }
+  }
+  .icon-navigate-right{
+    background: url(../img/left_nav_arrow_white.svg) no-repeat center;
+  }
+  .icon-favorite{
+    background: url(../img/heart_white.svg) no-repeat center;
+  }
+  .favorite{
+    color: @white;
+  }
+}
+
+@media (min-width: @tablet-portrait) {
+
+  .page-header{
+    padding: 0 24px;
+
+    .icon-navigate-right{
+      width: 10px;
+      height: 17px;
+    }
+
+    .icon-favorite{
+      width: 18px;
+      height: 16px;
+    }
+
+    .header-logo{
+      &.center{
+        margin: 0;
+      }
+      .logo{
+        height: 24px;
+        width: 146px;
+      }
+    }
+
+  }
+
+}

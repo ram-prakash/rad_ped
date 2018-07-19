@@ -1,0 +1,125 @@
+#map, #profileMap{
+  position: relative !important;
+  width: 100%;
+  height: 100vh !important;
+  .transition (all .7s ease-in-out);
+  .leaflet-marker-icon.map-marker-leaflet.leaflet-zoom-animated.leaflet-interactive {
+      background: @black;
+      border-radius: 50%;
+      border: 4px solid @white;
+      box-shadow:  2px 2px 10px 0 rgba(0, 0, 0, 0.06);
+  }
+  .leaflet-pane{
+    .transition (all .7s ease-in-out);
+  }
+  .leaflet-popup{
+    bottom: 14px !important;
+  }
+
+  .leaflet-popup-content-wrapper, .map-legends, .map-tooltip {
+    border-radius: 4px;
+    background-color: @white;
+    box-shadow: 0 7px 14px 0 rgba(0, 0, 0, 0.12);
+  }
+  .leaflet-popup-content{
+      width: 300px !important;
+      padding: 11px 15px 15px 15px !important;
+    .map-item-popup{
+      cursor: pointer;
+      .flex-display(flex);
+      .align-items(flex-start);
+      .flex-wrap(nowrap);
+      .tooltip-image-wrap {
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        float: left;
+        .border-radius(4px);
+        margin-top: 4px;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .tooltip-detail-wrap{
+        width: 190px;
+        padding-left: 16px;
+        float: left;
+        color: @black;
+        .head{
+          width: auto;
+          margin-bottom: 0px;
+          float: right;
+          padding-left: 5px;
+          margin-top: 4px;
+          .tooltip-heart{
+            height: 32px;
+            width: 38px;
+            display: inline-block;
+            background: url(../../images/preview/favorite-black.png) left center no-repeat;
+            float: left;
+          }
+          .tooltip-heart.active{
+            background: url(../../images/preview/favorite-red.png) left center no-repeat;
+            margin-left: -8px;
+          }
+          .tooltip-category {
+            height: 24px;
+            .border-radius(3px);
+            border: solid 1px #dedede;
+            background: none;
+            width: auto;
+            padding: 0px 14px;
+            line-height: 24px;
+            display: inline-block;
+            float: right;
+          }
+        }
+        p{
+          width: 100%;
+          line-height: 19px;
+          font-size: 12px;
+          margin-bottom: 0;
+          float: left;
+        }
+      }
+    }
+  }
+  .marker-cluster {
+    background-color: rgba(0, 0, 0, 0.6);
+    .border-radius(20px);
+    div{
+      background: @black;
+      span{
+        color: @white;
+      }
+    }
+  }
+}
+#map.map-changed-left{
+  width: 50% !important;
+  margin-left: 50%;
+}
+#map.map-changed-right{
+  width: 50% !important;
+  margin-right: 50%;
+}
+
+#profileMap {
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+  &.edit-profile-map {
+    &::after {
+      display: none;
+    }
+  }
+}

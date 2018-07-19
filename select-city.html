@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<title>Raleigh & Drake</title>
+    <meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="false">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" href="favicon.ico">
+
+    <link rel="stylesheet/less" type="text/css" href="less/main.less" />
+
+  </head>
+  <body>
+    <main>
+
+      <header class="header">
+        <div class="page-header">
+          <div class="back-btn only-mobile"><a href="home.html" class="icon-navigate-right"></a></div>
+          <div onclick="window.location.href='/home.html'" class="header-logo"><span class="logo"></span></div>
+          <div class="right-icon only-mobile"><span class="icon-favorite"></span></div>
+          <div class="favorite only-tablet">MY FAVORITES</div>
+        </div>
+      </header>
+
+      <div class="sub-menu only-tablet">
+        <a href="home.html">BACK</a>
+        <div class="text hide">SHARE</div>
+      </div>
+      <!-- Homepage start here -->
+      <div class="city">
+
+        <h4>48 CITIES</h4>
+        <h1>Select your<br>next destination</h1>
+
+        <div class="menu">
+
+          <div class="sorting">
+            <span class="text">Sort by</span>
+            <select name="sort" id="">
+                <option value="popular">most popular</option>
+                <option value="new">new</option>
+                <option value="relevance">relevance</option>
+            </select>
+          </div>
+
+          <div class="search">
+            <input type="text" placeholder="Search Cities">
+            <span class="search-icon"></span>
+          </div>
+
+        </div><!-- end menu -->
+
+        <div class="grid">
+
+          <div class="grid__item">
+            <a href="city-detail.html" class="fliter-color">
+              <span class="text">TULUM</span>
+              <img src="./img/city/tulum.jpg" alt="Tulum">
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="city-detail.html" class="fliter-color">
+              <span class="text">NEW YORK</span>
+              <img src="./img/city/newyork.jpg" alt="New York">
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="city-detail.html" class="fliter-color">
+              <span class="text">PARIS</span>
+              <img src="./img/city/paris.jpg" alt="Paris">
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="city-detail.html" class="fliter-color">
+              <span class="text">LONDON</span>
+              <img src="./img/city/london.jpg" alt="London">
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="city-detail.html" class="fliter-color">
+              <span class="text">BARCELONA</span>
+              <img src="./img/city/barcelona.jpg" alt="Barcelona">
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="city-detail.html" class="fliter-color">
+              <span class="text">BANGKOK</span>
+              <img src="./img/city/bangkok.jpg" alt="Bangkok">
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="city-detail.html" class="fliter-color">
+              <span class="text">MEXICO CITY</span>
+              <img src="./img/city/mexico.jpg" alt="Mexico City">
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="city-detail.html" class="fliter-color">
+              <span class="text">LIMA</span>
+              <img src="./img/city/lima.jpg" alt="Lima">
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="city-detail.html" class="fliter-color">
+              <span class="text">MIAMI</span>
+              <img src="./img/city/miami.jpg" alt="Miami">
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="city-detail.html" class="fliter-color">
+              <span class="text">SAN FRANCISCO</span>
+              <img src="./img/city/sanfrancisco.jpg" alt="San Francisco">
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="city-detail.html" class="fliter-color">
+              <span class="text">AUSTIN</span>
+              <img src="./img/city/austin.jpg" alt="Austin">
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="city-detail.html" class="fliter-color">
+              <span class="text">LAS VEGAS</span>
+              <img src="./img/city/lasvegas.jpg" alt="Las Vegas">
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="city-detail.html" class="fliter-color">
+              <span class="text">MOROCCO</span>
+              <img src="./img/city/morocco.jpg" alt="Morocco">
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="city-detail.html" class="fliter-color">
+              <span class="text">MILAN</span>
+              <img src="./img/city/milan.jpg" alt="Milan">
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="city-detail.html" class="fliter-color">
+              <span class="text">VENICE</span>
+              <img src="./img/city/venice.jpg" alt="Venice">
+            </a>
+          </div>
+
+          <div class="grid__item">
+            <a href="city-detail.html" class="fliter-color">
+              <span class="text">HAVANA</span>
+              <img src="./img/city/havana.jpg" alt="Havana">
+            </a>
+          </div>
+
+        </div><!-- end grid -->
+
+        <a href="javascript:void(0);" class="btn orange large btn-block">LOAD MORE</a>
+
+      </div><!-- end city -->
+
+    </main>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/less-2.7.2.min.js"></script>
+
+  </body>
+</html>

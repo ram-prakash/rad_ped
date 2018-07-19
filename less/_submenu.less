@@ -1,0 +1,27 @@
+.sub-menu{
+  position: absolute;
+  top: 70px;
+  width: ~"calc(100% - 48px)";
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Celias-Black';
+  letter-spacing: 2.1px;
+  border-top: 2px solid @alto;
+  padding: 10px 0;
+  margin: -10px 24px 0;
+  z-index: 1;
+
+  a{
+    color: @black;
+  }
+
+  &.white{
+    color: @white;
+    border-top: 1px solid @white;
+
+    a{
+      color: @white;
+    }
+  }
+}

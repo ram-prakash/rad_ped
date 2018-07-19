@@ -1,0 +1,71 @@
+@btn_height: 60px;
+@btn_width: 196px;
+
+/*======================================================
+*  BUTTONS STYLES
+======================================================*/
+button {
+    -webkit-appearance: none;
+    background: none;
+    border: 0;
+}
+.btn {
+    height: @btn_height;
+    width: @btn_width;
+    text-align: center;
+    font-family: 'Celias-Black';
+    font-size: 10px;
+    line-height: 3.3;
+    letter-spacing: 1.8px;
+    cursor: pointer;
+    outline: none;
+    display: block;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    .box-sizing(border-box);
+    .user-select(none);
+    .transition-properties(all 0.3s ease);
+
+    &.primary, &.danger, &.black {
+        &:disabled, &.disabled {
+            cursor: default;
+            color: @white;
+            border: 6px solid @white;
+            background-color: transparent;
+        }
+    }
+
+    &.primary {
+        color: @white;
+        border: 6px solid @white;
+        background-color: transparent;
+    }
+    &.orange{
+        color: @bittersweet;
+        border: 6px solid @bittersweet;
+        background-color: transparent;
+    }
+    &.btn-block{
+        margin: 19px 20px 25px;
+        width: ~"calc(100% - 40px)";
+    }
+
+}
+
+
+@media (min-width: @tablet-portrait) {
+
+	.btn{
+		font-size: 12px;
+        line-height: 2.3;
+        height: 64px;
+
+        &.btn-block{
+            margin: 17px 24px 25px;
+            width: ~"calc(100% - 48px)";
+        }
+	}
+}

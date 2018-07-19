@@ -1,0 +1,139 @@
+.city{
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 70px 0 0;
+  color: @black;
+
+  h4{
+    opacity: 0.2;
+    font-family: 'Knockout-HTF67-FullBantamwt';
+    font-size: 18px;
+    line-height: normal;
+    letter-spacing: 1.6px;
+    padding: 0 20px;
+    margin-top: 25px;
+  }
+
+  h1{
+    font-family: 'Mercury_Display_Bold';
+    font-size: 40px;
+    line-height: 1;
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  .menu{
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Celias_Regular';
+    font-size: 12px;
+
+    .sorting{
+      line-height: 2.67;
+      min-width: 50%;
+
+      .text{
+        color: @silver;
+      }
+      select{
+        background: transparent;
+        text-decoration: underline;
+        font-size: 12px;
+      }
+    }
+
+    .search{
+      display: flex;
+      align-items: center;
+      width: 50%;
+
+      input{
+        text-align: right;
+        padding-right: 5px;
+        width: ~"calc(100% - 15px)";
+
+      }
+      .placeholder(transparent);
+
+      .search-icon{
+        background: url(../img/search.svg) no-repeat center;
+        background-size: 100%;
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+      }
+
+    }
+  }
+
+}
+
+
+@media (min-width: @tablet-portrait) {
+
+  .city{
+
+    h4{
+      font-size: 22px;
+      letter-spacing: 2px;
+      padding: 0 24px;
+      margin-top: 70px;
+    }
+
+    h1{
+      font-size: 60px;
+      line-height: 1.03;
+      padding: 0 24px;
+      margin-bottom: 50px;
+    }
+
+    .menu{
+      padding: 0 24px;
+
+      .search{
+
+        input{
+          color: @black;
+        }
+        .placeholder(@silver);
+
+      }
+    }
+  }
+
+}
+
+
+@media (min-width: @tablet-landscape) {
+  .city{
+    max-width: 952px;
+    margin: 0 auto;
+
+    h4{
+      font-size: 28px;
+      letter-spacing: 2.5px;
+    }
+
+    h1{
+      font-size: 80px;
+      line-height: 1.03;
+    }
+
+    .menu{
+      font-size: 14px;
+      line-height: 2.39;
+      padding: 0 24px;
+
+      .search{
+
+        input{
+          color: @black;
+        }
+        .placeholder(@silver);
+
+      }
+    }
+  }
+}
