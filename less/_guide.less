@@ -1,0 +1,277 @@
+.guide{
+  
+  .banner{
+    // background-image: url("../img/guide/guide-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 65px 25px;
+    min-height: 71vh;
+    display: flex;
+    .container{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1{
+        width: 50%;
+        font-family: 'Mercury_Display_Bold';
+        font-size: 40px;
+        line-height: 0.95;
+        color: #ffffff;
+      }
+      h4{
+        font-family: 'Celias-Black';
+        font-size: 11px;
+        font-weight: bold;
+        color: #ffffff;
+        span{
+          font-weight: normal;
+        }
+      }
+      p{
+        font-family: 'Mercury TextG';
+        font-size: 13px;
+        line-height: 1.23;
+        color: #ffffff;
+      }
+      .read-more{
+        font-family: 'Celias_Bold';
+        font-size: 11px;
+        letter-spacing: 1px;
+        color: #ff746a;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .detailed-guides{
+    padding: 25px;
+    max-width: 100%;
+    .guide-book{
+      text-align: left;
+      margin: 25px 0 0;
+      .guide-thumbnail{
+
+      }
+      .guide-data{
+        .fav-heart{
+          position: absolute;
+          top: 0;
+          right: 0;
+          img{
+            width: 16px;
+            height: 16px;
+          }
+        }
+        h2{
+          font-family: 'Mercury TextG';
+          font-size: 28px;
+          line-height: 1.07;
+          color: #000000;
+          margin: 20px 0 0;
+        }
+        h5{
+          font-family: 'Celias_Regular';
+          font-size: 11px;
+          color: #000000;
+        }
+        .vanue{
+          b{
+            font-family: 'Celias-Black';
+            font-size: 12px;
+            line-height: 1.33;
+            color: #000000;
+            display: block;
+          }
+          p{
+            &:first-of-type{
+              margin: 0;
+            }
+          }
+          p{
+            font-family: 'Celias_Regular';
+            font-size: 11px;
+            line-height: 1.45;
+            margin: 10px 0 14px;
+          }
+        }
+
+      }
+      .btn{
+        &.btn-block{
+          margin: 0;
+          width: 100%;
+        }
+      }
+    }
+  }
+  
+  .head4{
+    font-family: 'Knockout-HTF67-FullBantamwt';
+    font-size: 18px;
+    letter-spacing: 1.6px;
+    color: #c1c1c1;
+  }
+  .head2{
+    font-family: 'Mercury_Display_Bold';
+    font-size: 32px;
+    line-height: 1.06;
+    color: #000000;
+    margin-top: 5px;
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: @tablet-portrait){
+
+    .banner{
+      min-height: 100vh;
+      .container{
+        h1{
+          font-size: 80px;
+          line-height: 1;
+        }
+        p{
+          font-size: 14px;
+          line-height: 1.29;
+        }
+        .read-more{
+          display: none;
+        }
+      }
+    }
+
+    .map-area{
+      margin: 25px 25px 45px;
+      h4{
+        font-size: 22px;
+        letter-spacing: 2px;
+      }
+    }
+
+    .detailed-guides{
+      .guide-book{
+        display: flex;
+        justify-content: space-between;
+        .guide-thumbnail{
+          width: 49%;
+          flex-basis: 49%;
+        }
+        .guide-data{
+          width: 49%;
+          flex-basis: 49%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .fav-heart{
+            top: 0;
+          }
+          h2{
+            margin: 0;
+          }
+          .btn{
+            &.btn-block{
+              max-width: 220px;
+            }
+          }
+        }
+      }
+    }
+
+    .head4{
+      font-size: 22px;
+      letter-spacing: 2px;
+    }
+    .head2{
+      font-size: 36px;
+      margin-bottom: 30px;
+    }
+
+  }
+
+  @media (min-width: @tablet-landscape){
+
+    .banner{
+      min-height: 100vh;
+      .container{
+        h1{
+          font-size: 100px;
+          line-height: 1.02;
+        }
+        p{
+          font-size: 16px;
+          line-height: 1.25;
+        }
+        .read-more{
+          display: none;
+        }
+      }
+    }
+
+    .map-area{
+      margin: 25px 25px 80px;
+      h4{
+        font-size: 28px;
+        letter-spacing: 2.5px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .detailed-guides{
+      margin-bottom: 90px;
+      .guide-pair{
+        display: flex;
+        justify-content: space-between;
+        .guide-book{
+            flex-direction: column;
+            width: 49%;
+          .guide-thumbnail{
+            width: 100%;
+          }
+          .guide-data{
+            width: 100%;
+            .fav-heart{
+              top: 24px;
+            }
+            h2{
+              margin: 20px 0 0;
+              font-size: 36px;
+              line-height: 1.06;
+            }
+            h5{
+              font-size: 13px;
+            }
+          }
+        }
+      }
+    }
+
+    .head4{
+      font-size: 22px;
+      letter-spacing: 2px;
+    }
+    .head2{
+      font-size: 48px;
+      line-height: 1.08;
+      margin-top: 10px;
+      margin-bottom: 46px;
+    }
+
+  }
+
+}
+
+.map-area{
+  margin: 25px 25px 40px;
+  h4{
+    font-family: 'Knockout-HTF67-FullBantamwt';
+    font-size: 18px;
+    letter-spacing: 1.6px;
+    text-align: center;
+    color: #c1c1c1;
+    margin-bottom: 10px;
+  }
+  .map-wrapper{
+    background-color: yellow;
+  }
+}
+img{ width: 100%; }
