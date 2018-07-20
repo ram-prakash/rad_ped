@@ -53,24 +53,35 @@
   @media (min-width: @tablet-portrait) {
 
     .grid{
-  
+
       &__item{
         &.odd_items{
           width: 33%;
         }
       }
-      
+
+    }
+    .owl-item{
+      .grid{
+
+        &__item{
+          &.odd_items{
+            width: 100%;
+          }
+        }
+
+      }
     }
 
   }
 
   @media (min-width: @tablet-landscape) {
     .grid{
-  
+
       &__item{
 
         .text{
-          
+
           &.title{
             font-size: 24px;
             width: ~"calc(100% - 20px)";
@@ -87,13 +98,13 @@
           }
         }
       }
-  
+
     }
   }
 
   @media (max-width: @phone-landscape) {
     .grid{
-  
+
       &__item{
         &.odd_items{
           width: 100%;
@@ -116,7 +127,7 @@
           }
         }
       }
-  
+
     }
   }
 
