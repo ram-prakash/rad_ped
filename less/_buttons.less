@@ -47,10 +47,22 @@ button {
         color: @bittersweet;
         border: 6px solid @bittersweet;
         background-color: transparent;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+
+        &:hover,
+        &:focus,
+        &:active{
+            color: @white;
+            border: 6px solid @bittersweet;
+            background-color: @bittersweet;
+        }
     }
     &.btn-block{
-        margin: 19px 20px 25px;
-        width: ~"calc(100% - 40px)";
+        margin: 19px 24px 25px;
+        width: ~"calc(100% - 48px)";
     }
 
 }

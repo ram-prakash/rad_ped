@@ -11,12 +11,31 @@
 .grid{
   display: flex;
   flex-wrap: wrap;
-  padding: 0 14px;
+  padding: 0 18px;
 
   &__item{
     width: 50%;
     padding: 6px;
     position: relative;
+
+    .fliter-color{
+      display: inline-block;
+      position: relative;
+      width: 100%;
+
+      .city-color{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: 0.5;
+        -webkit-transition: all 0.5s;
+        -moz-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+    }
 
     .text{
       font-family: 'Celias-Black';
@@ -164,11 +183,12 @@
   }
 }
 @media (max-width: @phone-landscape) {
+
   .large-grid{
     padding-left: 0;
     &.two-slide {
       width: 90%;
-      margin: 0 auto;  
+      margin: 0 auto;
 
       .owl-stage-outer {
         width: 100%;
@@ -186,6 +206,13 @@
     &__item{
       width: 25%;
       padding: 8px;
+
+      .fliter-color{
+        .city-color{
+          opacity: 0.5;
+        }
+      }
+
     }
   }
 
@@ -241,7 +268,7 @@
       margin: 0 auto;
       .owl-stage-outer {
         overflow: visible;
-      }    
+      }
     }
   }
 
@@ -275,6 +302,19 @@
 
     &__item{
       padding: 10px;
+
+      .fliter-color{
+        .city-color{
+          opacity: 0;
+        }
+        &:hover,
+        &:focus,
+        &:active{
+          .city-color{
+            opacity: 0.5;
+          }
+        }
+      }
     }
 
     .text{
@@ -300,7 +340,7 @@
       }
       .owl-stage-outer {
         overflow: hidden;
-      }    
+      }
     }
   }
   .large-grid{
