@@ -61,11 +61,18 @@ button {
 	.btn{
 		font-size: 12px;
         line-height: 2.3;
-        height: 64px;
+        height: 70px;
+        min-width: 220px;
 
         &.btn-block{
             margin: 17px 24px 25px;
             width: ~"calc(100% - 48px)";
         }
+	}
+}
+@media (min-width: @tablet-landscape) {
+    .btn{
+        height: 70px;
+        min-width: 240px;
 	}
 }

@@ -47,7 +47,7 @@
   .bottom-content{
     font-family: 'Celias_Light';
     font-size: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     letter-spacing: 1.8px;
     text-align: center;
     display: flex;
@@ -56,12 +56,14 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+    color: @white;
   }
 
   .page-header{
     display: none;
   }
 }
+
 .resizing-input {
   width: 100%;
   height: 63px;
@@ -74,7 +76,7 @@
   .form-controler {
     background: @bittersweet;
     border-bottom: none;
-    margin: 15px auto -0px;
+    margin: 10px auto -0px;
     height: 30px;
     color: @white;
     text-align: center;
@@ -82,8 +84,8 @@
     border-radius: 0;
     display: block;
     width: 0px;
-   
-    &:focus, 
+
+    &:focus,
     &:not(:placeholder-shown) {
       padding: 0 15px;
     }
@@ -99,8 +101,9 @@
       color: #fff;
       opacity: 0;
     }
-  } 
+  }
 }
+
 @media (min-width: @tablet-portrait) {
 
   .email-pages{
@@ -125,19 +128,22 @@
         justify-content: center;
       }
       .b-border {
-        margin: 20px auto 70px;
+        margin: 20px auto 60px;
       }
 
     }
 
     .bottom-content{
       font-size: 12px;
-      margin-bottom: 25px;
+      margin-bottom: 22px;
       letter-spacing: 2.3px;
       height: 55px;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
+    }
+  }
+
+  .resizing-input {
+    .form-controler {
+      margin: 15px auto 0;
     }
   }
 
@@ -162,23 +168,18 @@
 
       h1{
         font-size: 80px;
-        margin-bottom: 60px;
+        margin-bottom: 19px;
       }
 
       .two-btn{
         justify-content: center;
+        margin-top: 55px;
       }
 
-    }
+      .b-border {
+        margin: 20px auto 66px;
+      }
 
-    .bottom-content{
-      font-size: 12px;
-      margin-bottom: 25px;
-      letter-spacing: 2.3px;
-      height: 55px;
-      position: absolute;
-      bottom: 0;
-      width: 100%;
     }
   }
 }
